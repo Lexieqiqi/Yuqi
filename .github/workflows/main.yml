@@ -1,0 +1,39 @@
+name: Deploy to Github Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deployment:
+    name: build-action
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+
+      - name: Get node dependencies
+        run: npm install
+
+      - name: Build page
+        run: npm run build
+
+      - name: Export static page
+        run: npm run export
+
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
+
+      - name: Deploy to Github Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: out
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
