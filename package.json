@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages build"
+    "deploy": "next build && next start && gh-pages -d out"
   },
   "dependencies": {
     "eslint": "8.36.0",
