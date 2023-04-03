@@ -6,6 +6,7 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from 'next/navigation';
+import ProfileImg from '../../public/IMG_5653.jpg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -49,7 +50,7 @@ const Navbar = () => {
         className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex items-center justify-between w-full h-full px-2 2xl:px-16 py-2'>
                 <Link href='/'>
-                    <Image src='/../public/IMG_5653.jpg' width='80' height='10' alt='logo' priority={true} style={{ objectFit: 'contain', maxHeight: '80%' }} />
+                    <Image src={ProfileImg} width='80' height='10' alt='logo' priority={true} style={{ objectFit: 'contain', maxHeight: '80%' }} />
                 </Link>
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'>
