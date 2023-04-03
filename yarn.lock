@@ -703,7 +703,7 @@
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   "version" "4.0.0"
 
-"eslint-config-next@13.2.4":
+"eslint-config-next@^13.2.4":
   "integrity" "sha512-lunIBhsoeqw6/Lfkd6zPt25w1bn0znLA/JCL+au1HoEpSb4/PpsOYsYtgV/q+YPsoKIOzFyU5xnb04iZnXjUvg=="
   "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-13.2.4.tgz"
   "version" "13.2.4"
