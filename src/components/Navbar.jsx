@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from 'next/navigation';
 import ProfileImg from "@images/IMG_5653.jpg"
+import LogoImg from "@images/Logo.svg.png"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -89,7 +90,7 @@ const Navbar = () => {
                 <div className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Image src='/../public/logo.png' alt='/' width={97} height='35' />
+                            <Image src={LogoImg} alt='/' width={97} height='35' />
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose size={25} />
                             </div>
