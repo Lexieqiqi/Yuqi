@@ -26,7 +26,7 @@ const Navbar = () => {
             setNavBg('transparent')
             setLinkColor('#ecf0f3')
         } else {
-            setNavBg('#ecf0f3')
+            setNavBg('transparent')
             setLinkColor('#1f2937')
         }
     }, [router])
@@ -49,7 +49,7 @@ const Navbar = () => {
 
     return (
         <div style={{ backgroundColor: `${navBg}` }} 
-        className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+        className={ `fixed top-0 w-full h-20 z-[100]  ${shadow ? 'shadow-xl' : ''}`}>
             <div className='flex items-center justify-between w-full h-full px-2 2xl:px-16 py-2'>
                 <Link href='/'>
                     <Image id="pi" src={ProfileImg} width='80' height='10' alt='logo' priority={true} style={{ objectFit: 'contain', maxHeight: '80%' }} />
