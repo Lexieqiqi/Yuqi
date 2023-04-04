@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import PythonImg from '@images/Python-logo-notext.svg.png'
 import ReactImg from '@images/React-icon.svg.png'
-import TailwindImg from '@images/TailwindCSS-icon.svg.png'
+import TailwindImg from '@images/Tailwind_CSS_Logo.svg.png'
 
 const Skills = () => {
   return (

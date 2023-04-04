@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from 'next/navigation';
 import ProfileImg from "@images/IMG_5653.jpg"
-import LogoImg from "@images/Logo.svg.png"
+import LogoImg from "@images/logo.png"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
