@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: ''
+  basePath: isProd ? "Yuqi" : "",
 }
 
 module.exports = nextConfig
