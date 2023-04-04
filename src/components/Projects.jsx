@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import gallangImg from "@images/gallang.png"
 import furhatImg from "@images/furhat.png"
-import starlampImg from "@images/starlamp.png"
+import starlampImg from "@images/StarLamp.png"
 import searchengineImg from "@images/searchEngine.png"
 
 const Projects = () => {
