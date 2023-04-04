@@ -8,6 +8,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from 'next/router';
 import ProfileImg from "@images/IMG_5653.jpg"
 import LogoImg from "@images/logo.png"
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -44,7 +45,6 @@ const Navbar = () => {
         };
         window.addEventListener('scroll', handleShadow)
     }, []);
-
     
 
     return (
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/' scroll={false}>
+                            <Link href='/#home' scroll={false}>
                             Home
                             </Link>
                         </li>
