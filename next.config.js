@@ -5,10 +5,10 @@ const nextConfig = {
   experimental: {
     appDir: false,
   },
-  assetPrefix: isProd ? "/Yuqi" : "",
   images: {
     unoptimized: true
   },
+  assetPrefix: isProd ? "/Yuqi" : "",
   basePath: isProd ? "/Yuqi" : "",
 }
 
