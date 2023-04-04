@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import gallangImg from 'public/projects/gallang.png'
-import furhatImg from 'public/projects/furhat.png'
-import starlampImg from 'public/projects/starlamp.png'
-import searchengineImg from 'public/projects/searchengine.png'
+import gallangImg from '../../public/projects/gallang.png'
+import furhatImg from '../../public/projects/furhat.png'
+import starlampImg from '../../public/projects/starlamp.png'
+import searchengineImg from '../../public/projects/searchengine.png'
 import Link from 'next/link'
 import ProjectItem from './ProjectItem'
 

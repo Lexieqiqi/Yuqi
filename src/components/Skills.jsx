@@ -1,8 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import ReactImg from 'public/React-icon.svg.png'
-import TailwindImg from 'public/Tailwind_CSS_Logo.svg.png'
-import PythonImg from 'public/Python-logo-notext.svg.png'
 
 const Skills = () => {
   return (
@@ -15,7 +12,7 @@ const Skills = () => {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
-                            <Image src={PythonImg} width='64' height='64' alt=''/>
+                            <Image src="/Python-logo-notext.svg.png'" width='64' height='64' alt=''/>
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>Python</h3>
@@ -26,7 +23,7 @@ const Skills = () => {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
-                            <Image src={ReactImg} width='64' height='64' alt=''/>
+                            <Image src="/React-icon.svg.png" width='64' height='64' alt=''/>
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>React</h3>
@@ -37,7 +34,7 @@ const Skills = () => {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                         <div className='m-auto'>
-                            <Image src={TailwindImg} width='64' height='64' alt=''/>
+                            <Image src="/Tailwind_CSS_Logo.svg.png" width='64' height='64' alt=''/>
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>Tailwind</h3>
