@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import ProfileImg from "@images/IMG_5653.jpg"
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
                 <p className='text-gray-600 underline cursor-pointer'>Check out my latest projects.</p>
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                <Image className='rounded-xl' src='/IMG_5653.jpg' width='350' height='150' alt=''/>
+                <Image className='rounded-xl' src={ProfileImg} width='350' height='150' alt=''/>
             </div>
         </div>
     </div>
