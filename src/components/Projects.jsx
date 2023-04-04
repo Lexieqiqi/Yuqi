@@ -1,15 +1,13 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
-import Skills from '@component/Skills'
 import gallangImg from "@images/gallang.png"
 import furhatImg from "@images/furhat.png"
 import starlampImg from "@images/starlamp.png"
-import searchengineImg from "@images/searchengine.png"
+import searchengineImg from "@images/searchEngine.png"
 
 const Projects = () => {
   return (
     <div id='projects' className='w-full lg:h-screen'>
-        <Skills />
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
             <h2 className='py-4'>What I've built</h2>
