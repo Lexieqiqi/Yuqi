@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@component/Navbar";
 import "./globals.css";
 
 function MyApp({ Component, pageProps }) {

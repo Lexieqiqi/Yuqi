@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import ReactImg from '../../public/React-icon.svg.png'
-import TailwindImg from '../../public/Tailwind_CSS_Logo.svg.png'
-import PythonImg from '../../public/Python-logo-notext.svg.png'
+import ReactImg from 'public/React-icon.svg.png'
+import TailwindImg from 'public/Tailwind_CSS_Logo.svg.png'
+import PythonImg from 'public/Python-logo-notext.svg.png'
 
 const Skills = () => {
   return (

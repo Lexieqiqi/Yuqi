@@ -1,8 +1,8 @@
-import Main from '@/components/Main'
-import About from '@/components/About'
-import Skills from '@/components/Skills'
-import Projects from '@/components/Projects'
-import Contact from '@/components/Contact'
+import Main from '@component/Main'
+import About from '@component/About'
+import Skills from '@component/Skills'
+import Projects from '@component/Projects'
+import Contact from '@component/Contact'
 
 export default function Home() {
       
