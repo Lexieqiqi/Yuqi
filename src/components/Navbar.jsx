@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import ProfileImg from "@images/IMG_5653.jpg"
 import LogoImg from "@images/logo.png"
 
@@ -17,6 +17,7 @@ const Navbar = () => {
     const router = useRouter()
 
     useEffect(() => {
+        console.log(router.asPath); 
         if (
             router.asPath === '/searchengine' ||
             router.asPath === '/gallang' ||
