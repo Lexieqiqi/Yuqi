@@ -8,6 +8,13 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'lexieqiqi.github.io',
+          pathname: '/Yuqi'
+        },
+      ],
   },
   assetPrefix: isProd ? "/Yuqi" : "",
   basePath: isProd ? "/Yuqi" : "",
