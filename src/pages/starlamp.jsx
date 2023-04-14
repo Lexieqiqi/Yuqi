@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 
-const gallang = () => {
+const starlamp = () => {
   return (
     <main>
       <div className='w-full'>
@@ -70,4 +70,4 @@ const gallang = () => {
   )
 }
 
-export default gallang
+export default starlamp
