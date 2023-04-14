@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
-import gallangImg from "@images/projects/Gallang.png"
+import gallangImg from "@images/projects/gallang.png"
 import furhatImg from "@images/projects/furhat.png"
 import starlampImg from "@images/projects/StarLamp.png"
 import searchengineImg from "@images/projects/searchEngine.png"
