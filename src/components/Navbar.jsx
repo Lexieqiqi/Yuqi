@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import ProfileImg from "@images/IMG_5653.jpg"
 import LogoImg from "@images/logo.png"
 import { Link as ScrollLink } from 'react-scroll';
+import { MdOndemandVideo } from 'react-icons/md'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -131,12 +132,16 @@ const Navbar = () => {
                                         <FaGithub size={25} />
                                     </Link>
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <AiOutlineMail size={25} />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <BsFillPersonLinesFill size={25} />
-                                </div>
+                                <a target="_blank" href='https://space.bilibili.com/219617942?spm_id_from=333.1007.0.0'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title="Visit Bilibili">
+                                        <MdOndemandVideo size={25} title='Bilibili'/>
+                                    </div>
+                                </a>
+                                <a target='_blank' href='https://lexieqiqi.github.io/Yuqi/cv.pdf'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title='Check out my CV'>
+                                        <BsFillPersonLinesFill size={25} title='CV'/>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

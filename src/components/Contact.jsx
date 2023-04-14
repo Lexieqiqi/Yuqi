@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { MdOndemandVideo } from 'react-icons/md'
 import Link from 'next/link';
 
 const Contact = () => {
@@ -26,18 +27,26 @@ const Contact = () => {
                         <div>
                             <p className='uppercase pt-8'>Connect with Me</p>
                             <div className='flex items-center justify-between py-4'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <FaLinkedin />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <FaGithub />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <AiOutlineMail />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <BsFillPersonLinesFill />
-                                </div>
+                            <a target='_blank' href='https://www.linkedin.com/in/yuqi-liu-158b17193/'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title='Visit LinkedIn'>
+                            <FaLinkedin size={25} title='LinkedIn'/>
+                        </div>
+                    </a>
+                    <a target='_blank' href='https://github.com/Lexieqiqi'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title='Check out Github'>
+                            <FaGithub size={25} title='Github'/>
+                        </div>
+                    </a>
+                    <a target="_blank" href='https://space.bilibili.com/219617942?spm_id_from=333.1007.0.0'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title="Visit Bilibili">
+                            <MdOndemandVideo size={25} title='Bilibili'/>
+                        </div>
+                    </a>
+                    <a target='_blank' href='https://lexieqiqi.github.io/Yuqi/cv.pdf'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-115 ease-in duration-500' title='Check out my CV'>
+                            <BsFillPersonLinesFill size={25} title='CV'/>
+                        </div>
+                    </a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +84,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='flex justify-center py-12'>
-                <Link href="/">
+                <Link href="/#home">
                     <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <HiOutlineChevronDoubleUp className='text=[#5651e5]' size={30}/>
                     </div>
