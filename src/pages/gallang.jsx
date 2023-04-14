@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import gallangImg from "../../public/projects/gallang.png"
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -9,7 +10,7 @@ const gallang = () => {
       <div className='w-full'>
         <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
           <div className='relative z-10' style={{ height: '100%', width: '100%' }}>
-            <Image className='absolute object-contain' fill src="projects/gallang.png" alt='Gallang Image' />
+            <Image className='absolute object-contain' fill src={gallangImg} alt='Gallang Image' />
             <div className='absolute top-0 left-0 w-full h-full bg-black/70 z-20'></div>
             <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-30 p-2'>
               <h2>Gallang</h2>

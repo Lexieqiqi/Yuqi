@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
+import furhatImg from "../../public/projects/furhat.png"
 
 const furhat = () => {
   const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -11,7 +12,7 @@ const furhat = () => {
       <div className='w-full'>
         <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
           <div className='relative z-10' style={{ height: '100%', width: '100%' }}>
-            <Image className='absolute object-contain' fill src="projects/Furhat.png" alt='Furhat Image' />
+            <Image className='absolute object-contain' fill src={furhatImg} alt='Furhat Image' />
             <div className='absolute top-0 left-0 w-full h-full bg-black/70 z-20'></div>
             <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-30 p-2'>
               <h2>Furhat</h2>
